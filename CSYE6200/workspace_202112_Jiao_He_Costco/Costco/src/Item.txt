@@ -1,0 +1,8 @@
+2,3.49,OJ,Tropicana Oriage Juice
+1,2.49,Cheese,Provolone cheese
+3,1.49,Milk,Almond Milk
+4,0.89,Snack,Mounds chocolate bar
+6,384.49,Treadmill,Voyager Pro Treadmill,98.3,kg
+5,12.49,Chair,folding chair,2.89,Lbs
+7,101.49,Mattress,Air Mattress,27.6,kg
+8,6.89,Slippers,bath slippers,2.5,oz

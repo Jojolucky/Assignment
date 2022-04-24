@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Queue_int.java&apos; to &apos;DataStructure/src/edu.neu.csye6200&apos;&#x0A;- Original project: &apos;DataStructure&apos;&#x0A;- Destination element: &apos;DataStructure/src/edu.neu.csye6200&apos;&#x0A;- Original element: &apos;Queue_int.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;edu.neu.csye6200" element1="/src&lt;{Queue_int.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1648859793221" units="1" version="1.0"/>
+</session>

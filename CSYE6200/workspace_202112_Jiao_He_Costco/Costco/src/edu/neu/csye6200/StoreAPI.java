@@ -1,0 +1,22 @@
+package edu.neu.csye6200;
+import java.io.IOException;
+
+public abstract class StoreAPI {
+	
+    public abstract void sortByIdAscending();
+
+    public abstract void sortByIdDescending();
+
+    public abstract void sortByPriceAscending();
+
+    public abstract void sortByPriceDescending();
+
+    public abstract void sortByNameAscending();
+
+    public abstract void sortByNameDescending();
+
+    public abstract void sortByDescriptionAscending();
+
+    public abstract void sortByDescriptionDescending();
+
+}

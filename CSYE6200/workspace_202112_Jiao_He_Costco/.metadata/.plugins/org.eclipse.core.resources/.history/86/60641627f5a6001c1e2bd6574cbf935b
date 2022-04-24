@@ -1,0 +1,7 @@
+package neu.edu.csye6200;
+public class Dog extends Midterm{
+	public void bark() {
+        System.out.println("The dog barks: woof woof woof!");
+      }
+    
+}

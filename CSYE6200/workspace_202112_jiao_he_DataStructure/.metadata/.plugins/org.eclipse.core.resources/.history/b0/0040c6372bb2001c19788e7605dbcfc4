@@ -1,0 +1,14 @@
+package edu.neu.csye6200;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Queue_int.demo();
+		Queue_int_API.demo();
+		Stack_Generic.demo();
+		Stack_Generic_API.demo();
+
+	}
+
+}

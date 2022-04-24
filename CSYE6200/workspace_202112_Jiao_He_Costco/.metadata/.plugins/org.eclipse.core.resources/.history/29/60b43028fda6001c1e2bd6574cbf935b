@@ -1,0 +1,168 @@
+package edu.neu.csye6200;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class Costco extends StoreAPI {
+
+	static List<Durable> dList = new ArrayList<>();
+	static List<Service> sList = new ArrayList<>();
+	
+	public static void demo() throws IOException {
+		Costco costcoItem = new Costco();
+		BufferedReader out = new BufferedReader(new FileReader("src/Item.txt"));
+		String line = null;
+		while ((line = out.readLine()) != null) {
+			String[] in = line.split(",");
+			int id = ConvertUtility.StringToint(in[0]);
+			double price = ConvertUtility.StringToDouble(in[1]);
+			String name = in[2];
+			String description = in[3];
+			double weight = 0;
+			String weightUnits = "";
+
+			if (in.length == 6) {
+				weight = ConvertUtility.StringToDouble(in[4]);
+				weightUnits = in[5];
+			}
+			dList.add(DurableFactory.getInstance().createDurable(id, price, name, description, weight, weightUnits));
+			sList.add(ServiceFactory.getInstance().createService(id, price, name, description, "", "", ""));
+		}
+		out.close();
+		
+		Midterm.demo();
+		System.out.println("\n【 Item Imformations 】");
+		costcoItem.sortByIdAscending();
+		costcoItem.sortByIdDescending();
+		costcoItem.sortByPriceAscending();
+		costcoItem.sortByPriceDescending();
+		costcoItem.sortByNameAscending();
+		costcoItem.sortByNameDescending();
+		costcoItem.sortByDescriptionAscending();
+		costcoItem.sortByDescriptionDescending();
+	}
+	
+	// sort by ascending and descending
+	public void sortByIdAscending() {
+		System.out.println("\n*******  Sorted by ID Ascending *******\n");
+		Collections.sort(dList, new sortByIdAscending());
+		getDurableList();
+	}
+	public void sortByIdDescending() {
+		System.out.println("\n*******  Sorted by ID Descending *******\n");
+		Collections.sort(dList, new sortByIdDescending());
+		getDurableList();
+	}
+	public void sortByPriceAscending() {
+		System.out.println("\n*******  Sorted by Price Ascending *******\n");
+		Collections.sort(dList, new sortByPriceAscending());
+		getDurableList();
+	}
+	public void sortByPriceDescending() {
+		System.out.println("\n*******  Sorted by Price Descending *******\n");
+		Collections.sort(dList, new sortByPriceDescending());
+		getDurableList();
+	}
+	public void sortByNameAscending() {
+		System.out.println("\n*******  Sorted by Name Ascending *******\n");
+		Collections.sort(dList, new sortByNameAscending());
+		getDurableList();
+	}
+	public void sortByNameDescending() {
+		System.out.println("\n*******  Sorted by Name Descending *******\n");
+		Collections.sort(dList, new sortByNameDescending());
+		getDurableList();
+	}
+	public void sortByDescriptionAscending() {
+		System.out.println("\n*******  Sorted by Description Ascending  *******\n");
+		Collections.sort(dList, new sortByDescriptionAscending());
+		getDurableList();
+	}
+	public void sortByDescriptionDescending() {
+		System.out.println("\n*******  Sorted by Description Descending  *******\n");
+		Collections.sort(dList, new sortByDescriptionDescending());
+		getDurableList();
+	}
+
+	// show item informations in the list.
+	public static void getDurableList() {
+		for (int i = 0; i < dList.size(); i++) {
+			if(dList.get(i).getUnit() == ""){
+					System.out.println(
+						"Item:  [ Id: " + dList.get(i).getId() + "    Price: " + dList.get(i).getPrice() + "    Name: "
+								+ dList.get(i).getName() + "    Description:" + dList.get(i).getDescription() + " ]");
+			}else {
+				System.out.println(
+						"Item:  [ Id: " + dList.get(i).getId() + "    Price: " + dList.get(i).getPrice() + "    Name: "
+								+ dList.get(i).getName() + "    Description: " + dList.get(i).getDescription()
+								+ "    Weight: " + dList.get(i).getWeight() + "    WeightUnit: " + dList.get(i).getUnit() + " ]");
+			}
+		}
+	}
+	public static void getServiceList() {
+		for (int i = 0; i < sList.size(); i++) {
+			System.out.println(
+					"Item:  [ Id: " + sList.get(i).getId() + "   Price: " + sList.get(i).getPrice() + "    Name: "
+							+ sList.get(i).getName() + "    Description: " + sList.get(i).getDescription()
+							+ "  StartTime: " + sList.get(i).getStarTime() + "    EndTime: "
+							+ sList.get(i).getEndTime() + "    TimeUnit: " + sList.get(i).getTimeUnit() + " ]");
+		}
+
+	}
+
+	// override compare method
+	static class sortByIdAscending implements Comparator<ItemAPI> {
+		@Override
+		public int compare(ItemAPI a1, ItemAPI a2) {
+			return a1.getId() - a2.getId();
+		}
+	}
+	static class sortByIdDescending implements Comparator<ItemAPI> {
+		@Override
+		public int compare(ItemAPI a1, ItemAPI a2) {
+			return a2.getId() - a1.getId();
+		}
+	}
+	static class sortByPriceAscending implements Comparator<ItemAPI> {
+		@Override
+		public int compare(ItemAPI a1, ItemAPI a2) {
+			return Double.compare(a1.getPrice(), a2.getPrice());
+		}
+	}
+	static class sortByPriceDescending implements Comparator<ItemAPI> {
+		@Override
+		public int compare(ItemAPI a1, ItemAPI a2) {
+			return Double.compare(a2.getPrice(), a1.getPrice());
+		}
+	}
+	static class sortByNameAscending implements Comparator<ItemAPI> {
+		@Override
+		public int compare(ItemAPI a1, ItemAPI a2) {
+			return a1.getName().compareToIgnoreCase(a2.getName());
+		}
+	}
+	static class sortByNameDescending implements Comparator<ItemAPI> {
+		@Override
+		public int compare(ItemAPI a1, ItemAPI a2) {
+			return a2.getName().compareToIgnoreCase(a1.getName());
+		}
+	}
+	static class sortByDescriptionAscending implements Comparator<ItemAPI> {
+		@Override
+		public int compare(ItemAPI a1, ItemAPI a2) {
+			return a1.getDescription().compareToIgnoreCase(a2.getDescription());
+		}
+	}
+	static class sortByDescriptionDescending implements Comparator<ItemAPI> {
+		@Override
+		public int compare(ItemAPI a1, ItemAPI a2) {
+			return a2.getDescription().compareToIgnoreCase(a1.getDescription());
+		}
+	}
+
+}

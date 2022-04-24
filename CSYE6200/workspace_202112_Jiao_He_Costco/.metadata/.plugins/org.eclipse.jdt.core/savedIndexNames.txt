@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/jojo/Desktop/neu/2022spring/CSYE6200/workspace_202112_Jiao_He_Costco/.metadata/.plugins/org.eclipse.jdt.core
+2409137414.index
+1865797976.index
+2245065591.index
