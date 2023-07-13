@@ -1,0 +1,29 @@
+.home_card {
+    align-items: center;
+    border: 1px solid lightgray;
+    background-color: #eee;
+    height: 100%;
+    width: 100%;
+    color: rgb(107, 107, 90);
+}
+.home_card__carousels {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    float: right;
+}
+.home_card__pic > img{
+    width: 300px;
+    border-radius: 0.5rem;
+}
+.card__title {
+    text-align: center;
+    color: rgb(107, 107, 90);
+}
+.card__text { 
+    margin: 2rem;
+    flex-grow: 1;
+}
+.float_left {
+    float: left;
+}

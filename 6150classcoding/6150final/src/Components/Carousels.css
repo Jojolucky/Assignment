@@ -1,0 +1,37 @@
+.carousels__left-arrow{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-width: 0;
+    opacity: 40%;
+}
+.carousels__left-arrow:hover{
+    background-color: silver;
+}
+.carousels__right-arrow{
+    grid-column: 12/13;
+    grid-row: 1/2;
+    border-width: 0;
+    opacity: 40%;
+}
+.carousels__right-arrow:hover{
+    background-color: silver;
+}
+.carousels__image{
+    grid-column: 1/13;
+    grid-row: 1/2;
+
+    animation-name: fade-in;
+}
+.carousels__image > img {
+    width: 100%;
+    height: 230px;
+}
+
+@keyframes fade-in{
+    0% {
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}

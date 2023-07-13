@@ -1,0 +1,26 @@
+.register__title {
+    grid-column: 12 span;
+    text-align: center;
+}
+.register__form {
+    grid-column: 12 span;
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;;
+}
+.register__field {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+}
+.register__bottom {
+    grid-column: 2/3;
+    margin: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.register__button{
+    margin-top: 10px;
+    width: 80px;
+}

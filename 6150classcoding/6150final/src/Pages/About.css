@@ -1,0 +1,17 @@
+.about__page{
+    grid-column: 4/10;
+}
+
+.about__title{
+    grid-column: 12 span;
+    text-align: center;
+}
+.about__content{
+    grid-column: 2/12;
+}
+
+@media screen and (min-width: 44rem) {
+    .about-content{
+        grid-column: 4/10;
+    }    
+}

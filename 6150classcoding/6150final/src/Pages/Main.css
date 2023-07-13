@@ -1,0 +1,12 @@
+.main {
+    grid-column: 12 span;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.main__dark{
+    background-color: #d0d0e3;
+}
+.main__bright {
+    background-color: #C0FFEE;
+}

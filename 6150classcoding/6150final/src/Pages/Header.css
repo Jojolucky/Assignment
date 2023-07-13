@@ -1,0 +1,59 @@
+/* Header.css - remember to import in Header.jsx */
+.header {
+    grid-column: 12 span;
+    display: grid;
+    grid-template-areas:
+    "header-logo header-title header-nav";
+    grid-template-columns: auto auto auto;
+    
+}
+.header__dark {
+    background-color: #9393d4;
+    color: whitesmoke;
+}
+.header__bright {
+    background-color: skyblue;
+}
+.header__logo {
+    grid-area: header-logo;
+    border-radius: 1rem;
+    margin: 5px;
+}
+.header__title {
+    grid-area: header-title;
+    text-align: center;
+}
+
+.header__nav {
+    grid-area: header-nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.skip {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip:focus {
+    position: absolute;
+    left: 45%;
+    top: 0%;
+    width: auto;
+    height: auto;
+}
+
+@media screen and (min-width: 44rem){
+    .header {
+        display: grid;
+        grid-template-areas:
+        "header-logo header-title"
+        "header-nav header-nav";
+        grid-template-columns: auto 1fr;
+    }
+    .header__title{
+        margin-right: 8rem;
+    }
+}

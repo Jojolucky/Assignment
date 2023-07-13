@@ -1,0 +1,14 @@
+.settings__panel {
+    grid-column: 3/11;
+    margin-bottom: 2rem;
+}
+.settings__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+@media screen and (min-width: 44rem){
+    .settings__panel {
+        grid-column: 5/9;
+    }
+}

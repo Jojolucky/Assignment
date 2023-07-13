@@ -1,0 +1,29 @@
+.cat_main__content {
+    grid-column: 12 span;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: max-content max-content max-content;
+    gap: 0.5rem;
+    margin: 10%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.cat_card {
+    align-items: center;
+    border: 1px solid lightgray;
+    background-color: #eee;
+    color: rgb(107, 107, 90);
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cat_title{
+    grid-column: 12 span;
+    text-align: center;
+}
+@media screen and (min-width: 44rem) {
+    .cat_card {
+        grid-column: 4 span;
+    }
+}

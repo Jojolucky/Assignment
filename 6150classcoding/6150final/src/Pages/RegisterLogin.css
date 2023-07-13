@@ -1,0 +1,25 @@
+.welcome__page{
+    grid-column: 4/10;
+}
+.login__page {
+    grid-column: 12 span;
+    border-bottom: solid;
+    border-color: skyblue;
+    padding-bottom: 2rem;
+}
+.register__page {
+    grid-column: 12 span;
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 44rem){
+    .login__page {
+        grid-column: 2/7;
+        border-right: solid;
+        border-bottom: 0;
+        border-color: skyblue
+    }
+    .register__page {
+        grid-column: 7/12;
+    }
+}

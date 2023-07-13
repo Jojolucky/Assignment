@@ -1,0 +1,22 @@
+.home__main {
+    grid-column: 12 span;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: max-content max-content max-content;
+}
+.home_panel {
+    grid-column: 12 span;
+}
+.home__title {
+    grid-column: 12 span;
+    text-align: center;
+}
+@media screen and (min-width: 44rem) {
+    .home__main{
+        gap: 0.5rem;
+        margin: 10%;
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
+    
+}

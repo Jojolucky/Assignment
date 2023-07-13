@@ -1,0 +1,17 @@
+.footer {
+    grid-column: 12 span;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.footer-list{
+    list-style: none;
+}
+.footer__bright {
+    background-color: skyblue;
+}
+.footer__dark {
+    background-color: #9393d4;
+    color: whitesmoke;
+}

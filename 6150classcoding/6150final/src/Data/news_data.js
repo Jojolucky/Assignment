@@ -1,0 +1,30 @@
+export const panelData = [
+    {
+        title: "Jahn and Chok",
+        text: "This story brings a tear of joy to my eye every time I speak about it. After thirty years of being apart and suffering for wildlife entertainment in Thailand, Jahn and Chok were reunited at the venue Following Giants, intertwining their trunks when they saw each other. Following Giants formerly gave elephant rides and offered direct contact interactions such as bathing and feeding, but after working with World Animal Protection, it is now observation-only and lets the elephants lead the way. Jahn and Chok now live on the property with fellow elephant Sow and visitors can watch them simply be elephants from afar.",
+        imgSrc: ["https://images.unsplash.com/photo-1564760055775-d63b17a55c44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1777&q=80",
+    "https://images.unsplash.com/photo-1554092917-15b3e3f9e85a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+"https://images.unsplash.com/photo-1513875088480-163d746403ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"],
+        imgAlt: "Jahn and Chok",
+        floatDir: "right",
+    },
+    {
+        title: "Sammy and Enzo",
+        text: "In July of 2018, we were able to rescue six wild cats living and being sold as pets in New York. Thanks to supporters like you, we provided each of the cats' urgent veterinary care for issues such as malnutrition and bone fractures. All of the animals rescued were severely malnourished, while one male baby serval needed emergency fluids to survive. After our rescue, we were able to find them permanent homes at two specialized sanctuaries where they have room to roam and can fulfill their wild instincts like running, playing, and jumping. Sammy and Enzo, the two youngest servals, live at Turpentine Creek Wildlife Refuge in Arkansas and have recovered from their injuries.",
+        imgSrc: ["https://images.unsplash.com/photo-1515970501993-dafc9f582f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        "https://images.unsplash.com/photo-1532446321581-71f7c197e006?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+    ],
+        imgAlt: "Sammy and Enzo",
+        floatDir: "left",
+    },
+    {
+        title: "Oscar’s New Lease on Life",
+        text: "It started off with sadness. Oscar’s person died, and most of the family remaining felt that at 15, he had only a little time left himself. One took him home, to give him comfort. It turned out she also gave him enough love to make life worth living. He bounced back, and unable to care for him long term, she called us for help. Fast forward to this picture. After an autumn and first snowfalls of foster care, vet visits, encouragement to go outside to explore, and enough stamina to make it through losing the extra few pounds he carried, Oscar’s adventures are just beginning. Oh sure there are naps needed. But Louise adopted him with the best of home life, work life, and travel life ahead. She is a veterinarian, and Oscar goes to work with her every day.",
+        imgSrc: ["https://images.unsplash.com/photo-1605244863941-3a3ed921c60d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        "https://images.unsplash.com/photo-1555596873-1916fae19257?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1624&q=80",
+        "https://images.unsplash.com/photo-1534361960057-19889db9621e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+    ],
+        imgAlt: "hare/rabbit picture",
+        floatDir: "right",
+    },
+];

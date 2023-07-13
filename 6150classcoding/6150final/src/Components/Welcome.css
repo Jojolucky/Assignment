@@ -1,0 +1,11 @@
+.welcome__title {
+    grid-column: 12 span;
+    text-align: center;
+}
+.welcome__logout {
+    text-align: center;
+}
+.welcome__userInfo {
+    list-style: none;
+    padding: 0;
+}
